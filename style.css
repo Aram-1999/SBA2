@@ -16,7 +16,7 @@ nav > ul {
     display: flex;
 }
 
-header li{
+li{
     list-style: none;
     margin-right: 10px;
 }
@@ -27,4 +27,94 @@ header a {
     padding: 10px 20px;
     box-shadow: 2px 2px 2px red;
     background-color: rgb(201, 176, 176);
+}
+
+h1 {
+    text-align: center;
+}
+
+.hero {
+    background-image: url("https://newmobility.com/wp-content/uploads/2021/06/Mark-Smith.jpg");
+    background-size: cover;
+}
+
+.card {
+    background-color: rgb(231, 153, 153, 60%);
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(150, 110, 110);
+    border-radius: 50px;
+    width:fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 15px white;
+}
+
+.card2 {
+    background-color: rgb(96, 159, 138, 60%);
+    padding: 10px;
+    text-shadow: 5px 5px 15px white;
+}
+
+.aboutUs {
+    background-color: rgb(51, 155, 120);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.service {
+    background-color: rgb(210, 187, 187);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.services-section h2, p {
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+}
+
+.dropdown img {
+    width: 65px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 670px) {
+    nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -39,7 +39,7 @@ h1 {
 }
 
 .card {
-    background-color: rgb(231, 153, 153, 60%);
+    background-color: rgb(231, 153, 153, 75%);
     padding: 10px;
     box-shadow: 4px 4px 4px rgb(150, 110, 110);
     border-radius: 50px;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .card2 {
-    background-color: rgb(96, 159, 138, 60%);
+    background-color: rgb(128, 179, 160, 75%);
     padding: 10px;
     text-shadow: 5px 5px 15px white;
 }

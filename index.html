@@ -25,8 +25,9 @@
             <li><a href="#cont">Contact</a></li>
           </ul>
         </nav>
+
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn" role="navigation" aria-label="hover to access the dropdown menu for page navigation">
             <img src="./images/menu.png" alt="menu icon" />
           </button>
           <div class="dropdown-content">
@@ -36,6 +37,7 @@
             <a href="#cont">Contact</a>
           </div>
         </div>
+
       </div>
       <div class="strap"></div>
     </header>
@@ -149,21 +151,32 @@
       <section id="cont" class="contact-form">
         <form>
           <h2>Contact Us</h2>
+          <small id="infoHelp">We will never store your personal information in our database.</small> <br>
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Aram" />
+          <input type="text" id="name" placeholder="Aram" aria-describedby="infoHelp"/>
+          <br>
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="something@gmail.com" />
+          <input type="text" id="email" aria-describedby="infoHelp" placeholder="something@gmail.com" />
+          <br>
           <label for="subject">Subject</label>
           <input
             type="text"
             id="subject"
             placeholder="Make my house more accessible"
           />
+          <br>
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="5"></textarea>
+          <br>
+          <input type="submit" value="Message Us!">
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+        <br> <br>
+        <hr>
+        <p>&copy;Author: Aram Torosyan, Date: 2025</p>
+        <p><a href="mailto:aramtorosyan1999@gmailc.om">aramtorosyan1999@gmailc.om</a></p>
+    </footer>
   </body>
 </html>
